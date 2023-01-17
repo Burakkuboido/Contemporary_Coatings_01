@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+
+nav {
+    text-decoration: none;
+    border: 2px solid red;
+    text-align: right;
+    padding-right: 20%;
+    padding: 1em 20% 1em 0em;
+}
+
+li {
+    display: inline;
+    padding: 1rem;
+    font-size: 18px;
+}
+
+#logo {
+    float: left;
+    padding-left: 20%;
+    padding-top: 1em;
+}
+
+#quote {
+    padding: 1em;
+    font-size: 16px;
+    color: white;
+    background-color: orange;
+    border-radius: 36px;
+    border-color: white;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-top-width: 0;
+}
