@@ -4,7 +4,6 @@ body {
 
 nav {
     text-decoration: none;
-    border: 2px solid red;
     text-align: right;
     padding-right: 20%;
     padding: 1em 20% 1em 0em;
@@ -26,11 +25,15 @@ li {
     padding: 1em;
     font-size: 16px;
     color: white;
-    background-color: orange;
+    background-color: #eaad00;
     border-radius: 36px;
     border-color: white;
     border-left-width: 0;
     border-right-width: 0;
     border-bottom-width: 0;
     border-top-width: 0;
+}
+
+#hero-image{
+    max-width: 100%;
 }
