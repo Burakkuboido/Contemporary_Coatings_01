@@ -61,6 +61,7 @@ li {
     max-width: 47%;
     max-height: 500px;
     margin-right: auto;
+    border-radius: 5%;
 }
 
 #Who_Are_We {
@@ -79,6 +80,7 @@ p {
     font-size: 20px;
     color: rgb(61, 61, 61);
     line-height: 1.5em;
+    letter-spacing: 0.2px;
 }
 
 #OurWorkBtn{
@@ -92,5 +94,43 @@ p {
     border-right-width: 0;
     border-bottom-width: 0;
     border-top-width: 0;
-    margin-top: 2em;
 }
+
+.imgLeft {
+    max-width: 47%;
+    max-height: 800px;
+    margin-right: auto;
+    float: left;
+    border-radius: 5%;
+}
+
+.imgRight {
+    max-width: 47%;
+    max-height: 800px;
+    margin-right: auto;
+    float: right;
+    border-radius: 5%;
+}
+
+#serviceContainer {
+    margin-top: 10%;
+    text-align: center;
+}
+
+#serviceHeader {
+    color: #313c4d;
+    font-size: 36px;
+}
+
+.itemContainerServices {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    color:rgb(61, 61, 61);
+    font-size: 22px;
+}
+
