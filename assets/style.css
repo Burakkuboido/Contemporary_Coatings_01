@@ -212,3 +212,12 @@ h3 {
     margin-left: auto;
     overflow: hidden;
 }
+
+.galleryImage {
+    max-width: 400px;
+    max-height: 200px;
+}
+
+.box {
+    color: red;
+}
