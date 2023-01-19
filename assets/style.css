@@ -27,7 +27,7 @@ li {
     padding: 1em;
     font-size: 16px;
     color: white;
-    background-color: #eaad00;
+    background-color: #ff9100;
     border-radius: 36px;
     border-color: white;
     border-left-width: 0;
@@ -65,7 +65,7 @@ li {
 }
 
 #Who_Are_We {
-    color: #eaad00;
+    color: #ff9100;
     font-weight: bolder;
     font-size: 1.2em;
     margin-bottom: 0;
@@ -87,7 +87,7 @@ p {
     padding: 1em;
     font-size: 16px;
     color: white;
-    background-color: #eaad00;
+    background-color: #ff9100;
     border-radius: 36px;
     border-color: white;
     border-left-width: 0;
@@ -134,3 +134,22 @@ h3 {
     font-size: 22px;
 }
 
+#serviceHeader02 {
+    color: #ff9100;
+    font-size: 36px;
+    margin-top: 0;
+}
+
+#serviceContainer02 {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.extraList > li {
+    display: inline;
+    padding: 1rem;
+    font-size: 18px;
+    text-align: center;
+    color: #00184c;
+    font-weight: bolder;
+}
