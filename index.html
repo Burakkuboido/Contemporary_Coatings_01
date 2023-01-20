@@ -31,10 +31,7 @@
                 <h3 id="Who_Are_We">Who Are We?</h3>
                 <h3 id="About_Heading">Contemporary Coatings specialise in providing professional painting & decorating services in Kent...</h3>
                 <p>We have been in the industry for more than 35 years combined and have developed a strong reputation built on recommendation.</p>
-
                 <p>We receive the majority of our work through repeat business with existing clients and personal recommendation.</p>
-                    
-                <p>We feel this is testimony to the high standard of work we provide!</p>
                 <div>
                     <button id="OurWorkBtn">See Some of Our Work</button>
                 </div>
@@ -124,25 +121,100 @@
             <button onclick="showSpraying()">Spraying</button>
             <button onclick="showWallpapering()">Wallpapering</button>
         </div>
-        <div id="galleryContainer">
-            <img id="galleryImages01" class="galleryImage" src="assets/images/Interior_01.jpg" alt="">
-            <img id="galleryImages02" class="galleryImage" src="assets/images/Interior_02.jpg" alt="">
-            <img id="galleryImages03" class="galleryImage" src="assets/images/Interior_03.jpg" alt="">
-            <img id="galleryImages04" class="galleryImage" src="assets/images/ExteriorPainting_01.jpg" alt="">
-            <img id="galleryImages05" class="galleryImage" src="assets/images/ExteriorPainting_02.jpg" alt="">
-            <img id="galleryImages06" class="galleryImage" src="assets/images/ExteriorPainting_03.jpg" alt="">
-            <img id="galleryImages07" class="galleryImage" src="assets/images/FurniturePainting_01.jpg" alt="">
-            <img id="galleryImages08" class="galleryImage" src="assets/images/FurniturePainting_02.jpg" alt="">
-            <img id="galleryImages09" class="galleryImage" src="assets/images/FurniturePainting_03.jpg" alt="">
-            <img id="galleryImages10" class="galleryImage" src="assets/images/Spraying_01.jpg" alt="">
-            <img id="galleryImages11" class="galleryImage" src="assets/images/Spraying_02.jpg" alt="">
-            <img id="galleryImages12" class="galleryImage" src="assets/images/Spraying_03.jpg" alt="">
-            <img id="galleryImages13" class="galleryImage" src="assets/images/Wallpapering_01.jpg" alt="">
-            <img id="galleryImages14" class="galleryImage" src="assets/images/Wallpapering_02.jpg" alt="">
-            <img id="galleryImages15" class="galleryImage" src="assets/images/Wallpapering_03.jpg" alt="">
+
+        <div class="row">
+            <div class="column">
+                <img id="galleryImages01" class="galleryImage" src="assets/images/Interior_01.jpg" alt="" style="width:100%">
+            </div>
+            <div class="column">
+                <img id="galleryImages02" class="galleryImage" src="assets/images/Interior_02.jpg" alt="" style="width:100%">
+            </div>
+            <div class="column">
+                <img id="galleryImages03" class="galleryImage" src="assets/images/Interior_03.jpg" alt="" style="width:100%">
+            </div>
+            <div class="column">
+                <img id="galleryImages04" class="galleryImage" src="assets/images/ExteriorPainting_01.jpg" alt="" style="width:100%">
+            </div>
+            <div class="column">
+                <img id="galleryImages05" class="galleryImage" src="assets/images/ExteriorPainting_02.jpg" alt="" style="width:100%">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img id="galleryImages06" class="galleryImage" src="assets/images/ExteriorPainting_03.jpg" alt="" style="width:100%">
+            </div>
+            <div class="column">
+                <img id="galleryImages07" class="galleryImage" src="assets/images/FurniturePainting_01.jpg" alt="" style="width:100%">
+            </div>
+            <div class="column">
+                <img id="galleryImages08" class="galleryImage" src="assets/images/FurniturePainting_02.jpg" alt="" style="width:100%">
+            </div>
+            <div class="column">
+                <img id="galleryImages09" class="galleryImage" src="assets/images/FurniturePainting_03.jpg" alt="" style="width:100%">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img id="galleryImages10" class="galleryImage" src="assets/images/Spraying_01.jpg" alt="">
+            </div>
+            <div class="column">
+                <img id="galleryImages11" class="galleryImage" src="assets/images/Spraying_02.jpg" alt="">
+            </div>
+            <div class="column">
+                <img id="galleryImages12" class="galleryImage" src="assets/images/Spraying_03.jpg" alt="">
+            </div>
+            <div class="column">
+                <img id="galleryImages13" class="galleryImage" src="assets/images/Wallpapering_01.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img id="galleryImages14" class="galleryImage" src="assets/images/Wallpapering_02.jpg" alt="">
+            </div>
+            <div class="column">
+                <img id="galleryImages15" class="galleryImage" src="assets/images/Wallpapering_03.jpg" alt="">
+            </div>
+
+            </div>
+        </div>
+</section>
+
+<section class="imageBackground">
+
+    <div id="contentContainer">
+        <div class="itemContainer" >
+            <div class="itemLeftForm" >
+                <p id="formText">Tell us your vision, and we'll bring it to life! 
+                    Fill out the form below and get a reply from our friendly staff within 24 hours to setup an onsite visit and free quotation…</p>
+                <form method="post" action="https://formdump.codeinstitute.net/">
+
+                    <label for="name"></label>
+                    <input type="text" required id="name" placeholder="First Name" name="name">
+
+                    <label for="lname"></label>
+                    <input type="text" required id="lname" placeholder="Last Name" name="lname">
+
+                    <label for="email"></label>
+                    <input type="email" required id="email" placeholder="Your Email" name="email">
+    
+                    <label for="message"></label>
+                    <textarea name="message" id="message" cols="60" rows="8" placeholder="Enter your message"></textarea>
+                    <div id="btnCenter">
+                        <input type="submit" value="Submit" class="submitbutton" id="center">
+                    </div>
+                </form>
+            </div>
+            <div class="itemRightInfo">
+                <p id="info">brushes@contemporary-coatings.co.uk</p>
+                <p id="info">Don <a>07724 748515</a></p>
+                <p id="info">Meg <a>07547 865157</a></p>
+            </div>
         </div>
     </div>
 </section>
-<script src="assets/images/js/script.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 
