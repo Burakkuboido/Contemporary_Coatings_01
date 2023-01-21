@@ -186,7 +186,10 @@
 
     <div id="contentContainer">
         <div class="itemContainer" >
-            <div class="itemLeftForm" >
+            <div class="itemLeft">
+                <h1>Hello!</h1>
+            </div>
+            <div class="itemRightForm" >
                 <p id="formText">Tell us your vision, and we'll bring it to life! 
                     Fill out the form below and get a reply from our friendly staff within 24 hours to setup an onsite visit and free quotation…</p>
                 <form method="post" action="https://formdump.codeinstitute.net/">
@@ -207,14 +210,23 @@
                     </div>
                 </form>
             </div>
-            <div class="itemRightInfo">
-                <p id="info">brushes@contemporary-coatings.co.uk</p>
-                <p id="info">Don <a>07724 748515</a></p>
-                <p id="info">Meg <a>07547 865157</a></p>
-            </div>
         </div>
     </div>
 </section>
-<script src="assets/js/script.js"></script>
-</body>
 
+<footer class="contentContainer">
+    <div class="itemContainerFooter">
+        <div class="itemLeftFoot">
+            <img src="assets/images/Contemporary-Coatings_Logo_NavyText_3D-1024x626.png" alt="Contemporary Coating's Logo" id="footerLogo">
+            <p id="info">brushes@contemporary-coatings.co.uk</p>
+            <p id="info">Don <a>07724 748515</a></p>
+            <p id="info">Meg <a>07547 865157</a></p>
+        </div>
+            <div id="map" class="itemRightFoot"></div>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD43BJr5aCgP3e4o3d1ipyTmzwdsL6QonI&callback=initMap&v=weekly"></script>
+</body>
