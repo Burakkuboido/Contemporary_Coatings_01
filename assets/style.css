@@ -21,7 +21,17 @@ nav {
     text-align: right;
     padding-right: 20%;
     padding: 1.5em 20% 1.5em 0em;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 
 li {
     display: inline;
@@ -56,7 +66,7 @@ li {
 #logo {
     float: left;
     padding-left: 20%;
-    padding-top: 1.5em;
+
 }
 
 #quote {
@@ -89,7 +99,8 @@ li {
   white-space: nowrap;
 }
 
-#quote:after {
+#quote:after,
+#OurWorkBtn:after {
   background-clip: padding-box;
   background-color: #ff9100;
   border: solid transparent;
@@ -105,16 +116,20 @@ li {
 }
 
 #quote:main,
-#quote:focus {
+#quote:focus,
+#OurWorkBtn:main,
+#OurWorkBtn:focus {
   user-select: auto;
 }
 
-#quote:hover:not(:disabled) {
+#quote:hover:not(:disabled),
+#OurWorkBtn:hover:not(:disabled) {
   filter: brightness(1.1);
   -webkit-filter: brightness(1.1);
 }
 
-#quote:disabled {
+#quote:disabled,
+#OurWorkBtn:disabl {
   cursor: auto;
 }
 
@@ -156,7 +171,6 @@ li {
 /* About Us Section */
 
 
-
 #contentContainer {
     width: 60%;
     margin-right: auto;
@@ -179,13 +193,15 @@ li {
 #Who_Are_We {
     color: #ff9100;
     font-weight: bolder;
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-bottom: 0;
 }
 
 #About_Heading {
     color: #00184c;
     font-size: 2.5em;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 p {
@@ -196,18 +212,43 @@ p {
 }
 
 #OurWorkBtn{
-    padding: 1em;
+    appearance: button;
+    background-color: #d17600;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
     font-size: 16px;
-    color: #f0860c;
-    background-color: #ff9100;
-    border-radius: 36px;
-    border-color: #f0860c;
-    border-left-width: 0;
-    border-right-width: 0;
-    border-bottom-width: 0;
-    border-top-width: 0;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 1em;
     text-align: center;
-    float: left;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    transform: translateZ(0);
+}
+
+#image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5%;
+}
+
+#caption {
+    text-align: center;
 }
 
 .itemLeft > div {
@@ -239,7 +280,6 @@ p {
 }
 
 #serviceContainer {
-    margin-top: 10%;
     text-align: center;
 }
 
@@ -254,6 +294,12 @@ p {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5%;
+}
+
+#images {
+    width: 20%;
+    display: inline-block;
+    padding: 2%;
 }
 
 h3 {
