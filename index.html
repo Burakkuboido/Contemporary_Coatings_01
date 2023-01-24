@@ -36,7 +36,7 @@
                 </div>
             </section>
                 <div class="itemRight">
-                    <img class="imgAboutUsRight" src="/assets/images/Little-Bold-Design_WEB-1-1024x683.jpg" alt="Logo">
+                    <img class="imgAboutUsRight" src="/assets/images/Interior.jpg" alt="Logo">
                 </div>
         </div>
     </div>
@@ -45,22 +45,22 @@
     <div id="contentContainer">
         <div id="itemContainerServices">
             <div id="images">
-                <img id="image" src="/assets/images/Little-Bold-Design_WEB-1-1024x683.jpg" alt="">
+                <img id="image" src="/assets/images/Interior_01.jpg" alt="">
                 <h3>Interior Painting</h3>
                 <p>Whether it's giving the kitchen wall a new colour or sprucing up your bedroom, Contemporary Coatings know what's right and will offer you the best possible solution and work with your specifications.</p>
             </div>
             <div id="images">
-                <img id="image" src="/assets/images/Little-Bold-Design_WEB-1-1024x683.jpg" alt="">
+                <img id="image" src="/assets/images/ExteriorPainting_01.jpg" alt="">
                 <h3>Exterior Painting</h3>
                 <p>Does your brickwork need tidying up with a splash of paint, or your wood paneling needs bringing into this century with some beautiful restoration paintwork? We’re on hand to bring your vision to life.</p>
             </div>
             <div id="images">
-                <img id="image" src="/assets/images/Little-Bold-Design_WEB-1-1024x683.jpg" alt="">
+                <img id="image" src="/assets/images/Spraying_02.jpg" alt="">
                 <h3>Spraying</h3>
                 <p>Contemporary Coatings are domestic and commercial spray paint specialists. Offering professional spray painting to ceilings, walls, bedroom and household furniture and custom joinery.</p>
             </div>
             <div id="images">
-                <img id="image" src="/assets/images/Little-Bold-Design_WEB-1-1024x683.jpg" alt="">
+                <img id="image" src="/assets/images/Wallpapering_01.jpg" alt="">
                 <h3>Wallpapering</h3>
                 <p>Are you Wanting to cover your living room or a feature wall in your bedroom or lounge? Don't worry, We have you covered! Contemporary Coatings provide high quality wallpapering work.</p>
             </div>
@@ -99,80 +99,70 @@
 </div>
 </div>
 </section>
+<div id="contentContainer">
+<div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('ExteriorPainting')"> Exterior Painting</button>
+    <button class="btn" onclick="filterSelection('Interior')"> Interior</button>
+    <button class="btn" onclick="filterSelection('Spraying')"> Spraying</button>
+    <button class="btn" onclick="filterSelection('Wallpapering')"> Wallpapering</button>
+  </div>
+  
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+    <div class="column ExteriorPainting">
+      <div class="content">
+        <img src="/assets/images/ExteriorPainting_01.jpg" alt="ExteriorPainting" style="width:100%">
+      </div>
+    </div>
+    <div class="column ExteriorPainting">
+      <div class="content">
+      <img src="/assets/images/ExteriorPainting_02.jpg" alt="ExteriorPainting" style="width:100%">
+      </div>
+    </div>
+    <div class="column ExteriorPainting">
+      <div class="content">
+      <img src="/assets/images/ExteriorPainting_03.jpg" alt="ExteriorPainting" style="width:100%">
+      </div>
+    </div>
+    
+    <div class="column Interior">
+      <div class="content">
+        <img src="/assets/images/Interior_01.jpg" alt="Interior" style="width:100%">
+      </div>
+    </div>
+    <div class="column Interior">
+      <div class="content">
+      <img src="/assets/images/Interior_02.jpg" alt="Interior" style="width:100%">
+      </div>
+    </div>
+    <div class="column Interior">
+      <div class="content">
+      <img src="/assets/images/Interior_03.jpg" alt="Interior" style="width:100%">
+      </div>
+    </div>
 
-<section>
-    <div id="contentContainer">
-        <div id="galleryButtons">
-            <button onclick="showImages()">All</button>
-            <button onclick="showInterior()">Interior</button>
-            <button onclick="showExterior()">Exterior</button>
-            <button onclick="showFurniture()">Furniture Painting</button>
-            <button onclick="showSpraying()">Spraying</button>
-            <button onclick="showWallpapering()">Wallpapering</button>
+      <div class="column Spraying">
+        <div class="content">
+        <img src="/assets/images/Spraying_02.jpg" alt="Spraying" style="width:100%">
         </div>
+      </div>
 
-        <div class="row">
-            <div class="column">
-                <img id="galleryImages01" class="galleryImage" src="assets/images/Interior_01.jpg" alt="" style="width:100%">
-            </div>
-            <div class="column">
-                <img id="galleryImages02" class="galleryImage" src="assets/images/Interior_02.jpg" alt="" style="width:100%">
-            </div>
-            <div class="column">
-                <img id="galleryImages03" class="galleryImage" src="assets/images/Interior_03.jpg" alt="" style="width:100%">
-            </div>
-            <div class="column">
-                <img id="galleryImages04" class="galleryImage" src="assets/images/ExteriorPainting_01.jpg" alt="" style="width:100%">
-            </div>
-            <div class="column">
-                <img id="galleryImages05" class="galleryImage" src="assets/images/ExteriorPainting_02.jpg" alt="" style="width:100%">
-            </div>
+      <div class="column Wallpapering">
+        <div class="content">
+          <img src="/assets/images/Wallpapering_01.jpg" alt="Wallpapering" style="width:100%">
         </div>
-
-        <div class="row">
-            <div class="column">
-                <img id="galleryImages06" class="galleryImage" src="assets/images/ExteriorPainting_03.jpg" alt="" style="width:100%">
-            </div>
-            <div class="column">
-                <img id="galleryImages07" class="galleryImage" src="assets/images/FurniturePainting_01.jpg" alt="" style="width:100%">
-            </div>
-            <div class="column">
-                <img id="galleryImages08" class="galleryImage" src="assets/images/FurniturePainting_02.jpg" alt="" style="width:100%">
-            </div>
-            <div class="column">
-                <img id="galleryImages09" class="galleryImage" src="assets/images/FurniturePainting_03.jpg" alt="" style="width:100%">
-            </div>
+      </div>
+      <div class="column Wallpapering">
+        <div class="content">
+        <img src="/assets/images/Wallpapering_03.jpg" alt="Wallpapering" style="width:100%">
         </div>
+      </div>
+</div>
+</div>
 
-        <div class="row">
-            <div class="column">
-                <img id="galleryImages10" class="galleryImage" src="assets/images/Spraying_01.jpg" alt="">
-            </div>
-            <div class="column">
-                <img id="galleryImages11" class="galleryImage" src="assets/images/Spraying_02.jpg" alt="">
-            </div>
-            <div class="column">
-                <img id="galleryImages12" class="galleryImage" src="assets/images/Spraying_03.jpg" alt="">
-            </div>
-            <div class="column">
-                <img id="galleryImages13" class="galleryImage" src="assets/images/Wallpapering_01.jpg" alt="">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="column">
-                <img id="galleryImages14" class="galleryImage" src="assets/images/Wallpapering_02.jpg" alt="">
-            </div>
-            <div class="column">
-                <img id="galleryImages15" class="galleryImage" src="assets/images/Wallpapering_03.jpg" alt="">
-            </div>
-
-            </div>
-        </div>
-</section>
 
 <section class="imageBackground">
-
     <div id="contentContainer">
         <div class="itemContainer" >
             <div class="itemLeft">
