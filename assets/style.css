@@ -152,7 +152,7 @@ nav {
 }
 
 #contentContainerForm{
-    width: 84%;
+    width: 60%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -161,7 +161,6 @@ nav {
     width: 100%;
     display: flex;
     padding: 5vh 0;
-    align-items: center;
 }
 
 .itemRight, .itemLeft {
@@ -171,29 +170,35 @@ nav {
     margin-right: 5%;
 }
 
+.itemLeftContainer {
+    max-width: 80%;
+    margin-right: auto;
+    float: left;
+}
+
+p {
+    display: inline-block;
+    margin-top: 0;
+}
+
 #itemRightContainer {
-    width: 60%;
+    width: 100%;
     border-radius: 5%;
     display: inline;
     margin-top: 1em;
 }
 
 #itemLeftContainer {
-    margin-top: 1em;
     float: left;
-    margin-right: 5%;
-    background-color: rgb(0 0 0 / 45%);
+    margin-top: 0;
+    display: contents;
 }
 
-#itemRightContainer {
-    float: right;
-    margin-right: 5%;
-}
+
 
 #formTextContainer {
     margin-top: 0;
     margin-right: 5%;
-    background-color: rgb(0 0 0 / 45%);
 }
 
 
@@ -299,7 +304,6 @@ p {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 5%;
 }
 
@@ -438,29 +442,35 @@ h3 {
     padding-bottom: 2.5%;
 }
 
-#email, #message, #address {
+#email, #message, #address, #name,  #lname {
     background-color: rgb(255, 255, 255);
-    width: 72.5%;
+    width: 95%;
     color: rgb(0, 0, 0);
     border: 2px solid #030303;
     margin: 1%;
     padding: 1%;
-    margin-left: 12%;
 }
 
-#name,  #lname {
-    width: 32%;
+#service {
     background-color: rgb(255, 255, 255);
+    width: 98%;
     color: rgb(0, 0, 0);
     border: 2px solid #030303;
-    padding: 1%;
     margin: 1%;
+    padding: 1.5%;
+    font-size:18px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-#name {
-    margin-top: 5%;
-    margin-left: 12%;
-    margin-right: 4.5%;
+#sideService {
+    margin-left: 1%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:18px;
+}
+
+
+.itemRightInfo > p {
+    color: rgb(209, 209, 209)
 }
 
 
@@ -478,10 +488,13 @@ input[type="text"]
 }
 
 .itemRightForm {
-    background-color: rgb(0 0 0 / 45%);
-    max-width: 70%;
-    height: 30em;
-    border-radius: 5%;
+    background-color: #ff9100;
+    max-width: 47%;
+
+}
+
+#itemLeftContainer {
+    color: rgb(209, 209, 209);
 }
 
 #formText {
@@ -489,22 +502,17 @@ input[type="text"]
     color: white;
     line-height: 1.5em;
     letter-spacing: 0.2px;
-    font-weight: bolder;
     margin-left: 0.5%;
     margin-bottom: 0;
 }
 
 #formTextWhite {
     font-size: 20px;
-    color: rgb(255, 255, 255);
+    color: rgb(209, 209, 209);
     line-height: 1.5em;
     letter-spacing: 0.2px;
-    font-weight: bolder;
-    margin-left: 0.5%;
     margin-bottom: 0;
     margin-top: 0;
-    padding-right: 3em;
-    padding-bottom: 100%;
 }
 
 .imageBackground {
@@ -519,10 +527,16 @@ input[type="text"]
     float: right;
 }
 
+h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
 .itemRightInfo {
-    display: block;
-    margin-left: 15%;
     text-align: center;
+    float: right;
+    width: 60%;
+    margin-right: 5%;
 }
 
 a {
@@ -535,9 +549,10 @@ a:hover {
 }
 
 #map {
-  height: 22.5em; /* The height is 400 pixels */
-  width: 100%; /* The width is the width of the web page */
+  height: 18em; /* The height is 400 pixels */
+  width: 95%; /* The width is the width of the web page */
   margin-bottom: 2%;
+  margin-top: 5%;
 }
 
 #footerLogo {
