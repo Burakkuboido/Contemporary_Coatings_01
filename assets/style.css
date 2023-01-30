@@ -33,7 +33,7 @@ nav {
     width: 100%;
   }
 
-li {
+.navigation > li {
     display: inline;
     padding: 1rem;
     font-size: 18px;
@@ -133,31 +133,6 @@ li {
   cursor: auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #hero-image{
     max-width: 105vw;
     max-height: 86vh;
@@ -170,9 +145,14 @@ li {
 
 /* About Us Section */
 
-
 #contentContainer {
     width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#contentContainerForm{
+    width: 84%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -188,7 +168,34 @@ li {
     max-width: 47%;
     margin-right: auto;
     border-radius: 5%;
+    margin-right: 5%;
 }
+
+#itemRightContainer {
+    width: 60%;
+    border-radius: 5%;
+    display: inline;
+    margin-top: 1em;
+}
+
+#itemLeftContainer {
+    margin-top: 1em;
+    float: left;
+    margin-right: 5%;
+    background-color: rgb(0 0 0 / 45%);
+}
+
+#itemRightContainer {
+    float: right;
+    margin-right: 5%;
+}
+
+#formTextContainer {
+    margin-top: 0;
+    margin-right: 5%;
+    background-color: rgb(0 0 0 / 45%);
+}
+
 
 #Who_Are_We {
     color: #ff9100;
@@ -431,28 +438,29 @@ h3 {
     padding-bottom: 2.5%;
 }
 
-#email, #message {
+#email, #message, #address {
     background-color: rgb(255, 255, 255);
     width: 72.5%;
-    color: White;
+    color: rgb(0, 0, 0);
     border: 2px solid #030303;
     margin: 1%;
-    padding: 2%;
+    padding: 1%;
     margin-left: 12%;
 }
 
 #name,  #lname {
     width: 32%;
     background-color: rgb(255, 255, 255);
-    color: White;
+    color: rgb(0, 0, 0);
     border: 2px solid #030303;
-    padding: 2%;
+    padding: 1%;
     margin: 1%;
 }
 
 #name {
+    margin-top: 5%;
     margin-left: 12%;
-    margin-right: 2%;
+    margin-right: 4.5%;
 }
 
 
@@ -462,17 +470,18 @@ h3 {
 input[type="text"],
 input[type="email"],
 input[type="text"],
-textarea[name="message"]
+textarea[name="message"],
+input[type="text"]
 {
     font-size:18px;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .itemRightForm {
-    background-color: rgb(0, 24, 77, 40%);
-    max-width: 47%;
+    background-color: rgb(0 0 0 / 45%);
+    max-width: 70%;
+    height: 30em;
     border-radius: 5%;
-    border: 2px solid #030303;
 }
 
 #formText {
@@ -482,19 +491,32 @@ textarea[name="message"]
     letter-spacing: 0.2px;
     font-weight: bolder;
     margin-left: 0.5%;
-    text-align: center;
-    padding: 3%;
+    margin-bottom: 0;
+}
+
+#formTextWhite {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 1.5em;
+    letter-spacing: 0.2px;
+    font-weight: bolder;
+    margin-left: 0.5%;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-right: 3em;
+    padding-bottom: 100%;
 }
 
 .imageBackground {
-    background:linear-gradient(0deg, rgba(255, 145, 0, 85%), rgba(255, 145, 0, 85%));
+    background: rgba(0, 24, 77);
+    border-bottom: 3px solid #d17600;
 }
 
 #info {
     color: white;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
-    margin-left: 15%;
+    float: right;
 }
 
 .itemRightInfo {
@@ -513,16 +535,14 @@ a:hover {
 }
 
 #map {
-  height: 400px; /* The height is 400 pixels */
-  width: 50%; /* The width is the width of the web page */
+  height: 22.5em; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
   margin-bottom: 2%;
-  border: 3px solid #f0860c;
-  margin-left: 35%;
 }
 
 #footerLogo {
-    height: 30%;
-    width: 30%;
+    height: 20%;
+    width: 20%;
     display: block;
     margin-left: 10%;
     margin-top: 2%;
@@ -543,11 +563,16 @@ a:hover {
     display: flex;
     padding: 5vh 0;
     align-items: center;
-    background:linear-gradient(0deg, rgba(0, 24, 77, 0.8), rgba(0, 24, 77, 0.8)), url("https://contemporary-coatings.co.uk/wp-content/uploads/2022/02/Paints.jpg");
+    background-color: rgb(0 0 0 / 45%);
 }
 
 #contentContainerFooter {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    background: rgba(0, 24, 77);
+}
+
+.itemRightFoot > p{
+    margin-left: 50%;
 }

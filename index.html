@@ -11,7 +11,7 @@
 <body>
     <nav>
         <img src="assets/images/Contemporary-Coatings_Logo_NavyText_3D-140x86.png" alt="Contemporary Coating's Logo" id="logo">
-        <ul>
+        <ul class="navigation">
             <li><a href="#fullscreen" class="hover-underline-animation">Home</a></li>
             <li><a href="" class="hover-underline-animation">About Us</a></li>
             <li><a href="" class="hover-underline-animation">Our Services</a></li>
@@ -163,14 +163,21 @@
 
 
 <section class="imageBackground">
-    <div id="contentContainer">
+    <div id="contentContainerForm">
         <div class="itemContainer" >
             <div class="itemLeft">
-                <h1>Hello!</h1>
+                <div id="formTextContainer">
+                    <p id="formText">Tell us your vision, and we'll bring it to life! 
+                        Fill out the form on the side and get a reply from our friendly staff within 24 hours to setup an onsite visit and free quotation…</p>
+                </div>
+                    <div id="itemLeftContainer">
+                        <p id="formTextWhite">42 Singleton Hill, <br>Ashford, <br>Kent, <br>TN23 5WE</p>
+                    </div>
+                    <div id="itemRightContainer">
+                            <div id="map"></div>
+                    </div>
             </div>
             <div class="itemRightForm" >
-                <p id="formText">Tell us your vision, and we'll bring it to life! 
-                    Fill out the form below and get a reply from our friendly staff within 24 hours to setup an onsite visit and free quotation…</p>
                 <form method="post" action="https://formdump.codeinstitute.net/">
 
                     <label for="name"></label>
@@ -178,6 +185,9 @@
 
                     <label for="lname"></label>
                     <input type="text" required id="lname" placeholder="Last Name" name="lname">
+
+                    <label for="address"></label>
+                    <input type="text" required id="address" placeholder="Address" name="address">
 
                     <label for="email"></label>
                     <input type="email" required id="email" placeholder="Your Email" name="email">
@@ -197,12 +207,11 @@
     <div class="itemContainerFooter">
         <div class="itemLeftFoot">
             <img src="assets/images/Contemporary-Coatings_Logo_NavyText_3D-1024x626.png" alt="Contemporary Coating's Logo" id="footerLogo">
-            <p id="info">brushes@contemporary-coatings.co.uk</p>
-            <p id="info">Don <a>07724 748515</a></p>
-            <p id="info">Meg <a>07547 865157</a></p>
         </div>
         <div class="itemRightFoot">
-            <div id="map"></div>
+            <p>brushes@contemporary-coatings.co.uk</p>
+            <p>Don <a>07724 748515</a></p>
+            <p>Meg <a>07547 865157</a></p>
         </div>
     </div>
 </footer>
