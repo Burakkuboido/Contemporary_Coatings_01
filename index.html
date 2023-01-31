@@ -8,20 +8,21 @@
     <link rel="stylesheet" href="assets/style.css">
     <title>Contemporary Coatings</title>
 </head>
-<body>
-    <nav>
+<body id="Home">
+    <nav id="navBar" onmouseenter="highOpacity(this)" onmouseleave="lowOpacity(this)">
         <img src="assets/images/Contemporary-Coatings_Logo_NavyText_3D-140x86.png" alt="Contemporary Coating's Logo" id="logo">
         <ul class="navigation">
-            <li><a href="#fullscreen" class="hover-underline-animation">Home</a></li>
-            <li><a href="" class="hover-underline-animation">About Us</a></li>
-            <li><a href="" class="hover-underline-animation">Our Services</a></li>
-            <li><a href="" class="hover-underline-animation">Gallery</a></li>
-            <li><a id="quote">Get a Quote</a></li>
+            <li><a href="#Home" class="hover-underline-animation">Home</a></li>
+            <li><a href="#About" class="hover-underline-animation">About Us</a></li>
+            <li><a href="#Services" class="hover-underline-animation">Our Services</a></li>
+            <li><a href="#OurGallery" class="hover-underline-animation">Gallery</a></li>
+            <li><a href="#GetQuote" id="quote">Get a Quote</a></li>
         </ul>
     </nav>
         <div id="fullScreen">
             <img src="assets/images/Banner_DarkBlue_01.jpg" alt="" id="hero-image">
         </div>
+        <section id="About">
 
     <div id="contentContainer">
 
@@ -40,8 +41,9 @@
                 </div>
         </div>
     </div>
+</section>
 
-
+<section id="Services">
     <div id="contentContainer">
         <div id="itemContainerServices">
             <div id="images">
@@ -80,6 +82,7 @@
         </ul>
     </div>
 </div>
+</section>
 <section class="blueBackground">
 <div id="contentContainer02">
     <div id="serviceContainer02">
@@ -99,6 +102,7 @@
 </div>
 </div>
 </section>
+<section id="OurGallery">
 <div id="contentContainer">
 <div id="myBtnContainer">
     <button class="btn active" onclick="filterSelection('all')"> Show all</button>
@@ -160,8 +164,9 @@
       </div>
 </div>
 </div>
+</section>
 
-
+<section id="GetQuote">
 <section class="imageBackground">
     <div id="contentContainerForm">
         <div class="itemContainer" >
@@ -213,6 +218,7 @@
             </div>
         </div>
     </div>
+</section>
 </section>
 
 <footer id="contentContainerFooter">

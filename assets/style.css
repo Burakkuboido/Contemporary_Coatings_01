@@ -6,7 +6,7 @@ body {
 
 nav > ul > li > a {
     text-decoration: none;
-    color:rgb(61, 61, 61);
+    color:rgb(61, 61, 61, 0.4);
     font-size: 20px;
 }
 
@@ -25,7 +25,18 @@ nav {
     position: sticky;
     top: 0px;
     z-index: 2;
+    opacity: 0.1;
 }
+
+nav:hover,
+nav > ul > li > a {
+    opacity: 1;
+    -webkit-transition: opacity 500ms linear;
+    -ms-transition: opacity 500ms linear;
+    transition: opacity 500ms linear;
+}
+
+
 
 .sticky {
     position: fixed;

@@ -59,3 +59,37 @@ function initMap() {
   }
   
   window.initMap = initMap;
+
+
+
+
+
+
+
+
+// Get the Navigation Bar
+let navBar = document.getElementById("navBar");
+
+// When the user scrolls down 20px from the top of the document, hide the Navigation Bar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    navBar.style.opacity = "0.1";
+    navBar.style.transition = "1000ms"
+  } else {
+    navBar.style.opacity = "1";
+  }
+}
+
+// When the user moves the mouse onto the navigation bar, show the Navigation Bar
+function highOpacity(x) {
+  x.style.opacity = "1";
+}
+
+// If the user moves their mouse away from the navigation bar AND they are not at the top of the page, hide the Navigation Bar
+function lowOpacity(x) {
+  if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  x.style.opacity = "0.1";
+  }
+}
