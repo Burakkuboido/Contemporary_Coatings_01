@@ -7,6 +7,14 @@
     <script src="https://kit.fontawesome.com/7812bed04d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/style.css">
     <title>Contemporary Coatings</title>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init("ehcDD1j53ghsxMSwO");
+        })();
+    </script>
+
 </head>
 <body id="Home">
     <nav id="navBar" onmouseenter="highOpacity(this)" onmouseleave="lowOpacity(this)">
@@ -186,32 +194,29 @@
                     </div>
             </div>
             <div class="itemRightForm" >
-                <form method="post" action="https://formdump.codeinstitute.net/">
+                <form onsubmit="return sendMail(this);">
 
-                    <label for="name"></label>
-                    <input type="text" required id="name" placeholder="First Name" name="name">
+                    <label for="name" id="sname">Name:</label>
+                    <input type="text" required id="name" name="sname">
 
-                    <label for="address"></label>
-                    <input type="text" required id="address" placeholder="Last Name" name="address">
+                    <label for="phone" id="sphone">Phone Number:</label>
+                    <input type="tel" required id="phone" name="phone" pattern="[0-9]{11}">
 
-                    <label for="email"></label>
-                    <input type="email" required id="email" placeholder="Phone Number" name="email">
+                    <label for="email" id="semail">Email:</label>
+                    <input type="email" required id="email" name="email">
 
-                    <label for="email"></label>
-                    <input type="email" required id="email" placeholder="Email" name="email">
+                    <label for="address" id="saddress">Post Code:</label>
+                    <input type="text" required id="address" name="address" pattern="^([A-Za-z][A-Ha-hJ-Yj-y]?[0-9][A-Za-z0-9]? ?[0-9][A-Za-z]{2}|[Gg][Ii][Rr] ?0[Aa]{2})$">
 
-                    <label for="email"></label>
-                    <input type="email" required id="email" placeholder="Post Code" name="email">
-
-                    <label id="sideService" for="Service">Select a Service</label>
-                    <select required id="service" name="Service">
-                        <option value="Painting_Services">Painting Services</option>
+                    <label id="sideService" for="Service">Select a Service:</label>
+                    <select required id="service" name="service">
+                        <option value="Painting Services">Painting Services</option>
                         <option value="Wallpapering">Wallpapering</option>
-                        <option value="Other_Services">Other Services</option>
+                        <option value="Other Services">Other Services</option>
                     </select>
     
-                    <label for="message"></label>
-                    <textarea name="message" id="message" cols="60" rows="8" placeholder="Enter your message"></textarea>
+                    <label for="message" id="smessage">Enter Your Message</label>
+                    <textarea name="message" id="message" cols="40" rows="4"></textarea>
                     <div id="btnCenter">
                         <input type="submit" value="Submit" class="submitbutton" id="center">
                     </div>
@@ -232,7 +237,7 @@
         </div>
     </div>
 </footer>
-
+<script src="assets/js/sendEmail.js"></script>
 <script src="assets/js/script.js"></script>
 <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD43BJr5aCgP3e4o3d1ipyTmzwdsL6QonI&callback=initMap&v=weekly"></script>
 </body>

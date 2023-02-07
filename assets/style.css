@@ -240,16 +240,17 @@ p {
 }
 
 ::placeholder {
-    color: red;
+    color: black;
     opacity: 1; /* Firefox */
+    font-weight: bolder;
   }
   
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: red;
+   color: black;
   }
   
   ::-ms-input-placeholder { /* Microsoft Edge */
-   color: red;
+   color: black;
   }
 
 #OurWorkBtn{
@@ -455,15 +456,15 @@ h3 {
     
 .submitbutton {
     height: 3em;
-    width: 7em;
+    width: 95%;
     margin-top: 0.5%;
     border-radius: 12px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: 500;
     text-align: center;
     padding: 9px 15px;
-    background-color: #00184c;
+    background-color: #a75e00;
     cursor: pointer;
 }
 
@@ -472,30 +473,36 @@ h3 {
     padding-bottom: 2.5%;
 }
 
-#email, #message, #address, #name,  #lname {
-    background-color: rgb(255, 255, 255);
+#email, #message, #address, #name, #phone {
+    background-color: #d17600;
     width: 95%;
     color: rgb(0, 0, 0);
-    border: 2px solid #030303;
+    border: 2px solid #000000;
     margin: 1%;
     padding: 1%;
 }
 
 #service {
-    background-color: rgb(255, 255, 255);
+    background-color: #d17600;
     width: 98%;
     color: rgb(0, 0, 0);
     border: 2px solid #030303;
     margin: 1%;
-    padding: 1.5%;
+    padding: 1%;
     font-size:18px;
     font-family: 'Courier New', Courier, monospace;
 }
 
-#sideService {
+#sideService,
+#semail,
+#smessage,
+#saddress,
+#sname,
+#sphone {
     margin-left: 1%;
     font-family: 'Courier New', Courier, monospace;
     font-size:18px;
+    font-weight: bolder;
 }
 
 
@@ -509,18 +516,19 @@ h3 {
 
 input[type="text"],
 input[type="email"],
-input[type="text"],
 textarea[name="message"],
-input[type="text"]
+input[type="tel"]
 {
     font-size:18px;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .itemRightForm {
-    background-color: #ff9100;
+    padding-top: 1%;
+    background-color: #f0860c;
     max-width: 47%;
-
+    border-right: 20px solid #a75e00;
+    border-radius: 5px;
 }
 
 #itemLeftContainer {
