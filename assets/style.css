@@ -173,6 +173,13 @@ nav > ul > li > a {
     margin-left: auto;
 }
 
+#contentContainerServices {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 2%;
+}
+
 .itemContainer {
     width: 100%;
     display: flex;
@@ -308,10 +315,11 @@ p {
 
 .imgAboutUsRight{
     max-width: 100%;
-    max-height: 800px;
+    max-height: 100%;
     margin-right: auto;
     float: right;
     border-radius: 5%;
+    display: block;
 }
 
 .imgRight {
@@ -334,14 +342,26 @@ p {
 .itemContainerServices {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     margin-bottom: 5%;
+    text-align: center;
+    display: inline;
 }
 
 #images {
     width: 20%;
     display: inline-block;
     padding: 2%;
+}
+
+#imageText {
+    float: left;
+    color: rgb(5, 5, 5);
+}
+
+#servicesContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 2%;
 }
 
 h3 {
@@ -356,8 +376,9 @@ h3 {
 }
 
 #serviceContainer02 {
-    margin-top: 5%;
     text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .extraList > li {
@@ -369,6 +390,12 @@ h3 {
     font-weight: bolder;
 }
 
+ul {
+    padding-inline-start: 0;
+}
+
+
+
 #reviewContainer {
     margin-right: auto;
     margin-left: auto;
@@ -378,8 +405,10 @@ h3 {
 #review {
     width: 33%;
     float: left;
-    color: rgb(209, 209, 209);
+    color: rgb(255, 255, 255);
 }
+
+
 
 #star {
     color: #ff9100;
@@ -558,6 +587,10 @@ input[type="tel"]
     border-bottom: 3px solid #d17600;
 }
 
+.tabletScreenActive{
+    display: none;
+}
+
 #info {
     color: white;
     font-size: 18px;
@@ -631,3 +664,284 @@ a:hover {
 #paddedTop {
     padding-top: 2.5%;
 }
+
+.mobileScreen {
+    display: none;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {background: red;}
+    .itemLeft{
+        max-width: 100%;
+    }
+
+    #Who_Are_We{
+        font-size: 16px;
+    }
+
+    p {
+        font-size:18px;
+    }
+
+    .mobileScreenActive{
+        display: none;
+    }
+
+    #About_Heading {
+        font-size: 24px;
+    }
+    .laptopScreenActive{
+        display: block;
+    }
+
+    .desktopScreenActive{
+        display: none;
+    }
+
+    .itemContainer {
+        padding-bottom: 0;
+    }
+
+    #contentContainer {
+        padding-bottom: 2%;
+        width: 80%;
+    }
+
+    #images {
+        width: 95%;
+    }
+
+    #servicesContainer {
+        padding-top: 5%;
+    }
+
+    .phoneScreenActive {
+        display: block;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    body {background: green;}
+    #Who_Are_We{
+        font-size: 1.1em;
+    }
+
+    #About_Heading {
+        font-size: 24px;
+    }
+    .laptopScreenActive{
+        display: block;
+    }
+
+    .desktopScreenActive{
+        display: none;
+    }
+
+    .itemContainer {
+        padding-bottom: 0;
+    }
+
+    #contentContainer {
+        padding-bottom: 2%;
+        width: 80%;
+    }
+
+    #images {
+        width: 45%;
+    }
+
+    #servicesContainer {
+        padding-top: 2%;
+    }
+
+    .smallTabletScreenActive{
+        display: block;
+    }
+    
+    .tabletScreenActive{
+        display: none;
+    }
+
+    .phoneScreenActive {
+        display: none;
+    }
+
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 850px) {
+    body {background: blue;}
+    #About_Heading {
+        font-size: 32px;
+    }
+    .laptopScreenActive{
+        display: block;
+    }
+
+    .desktopScreenActive{
+        display: none;
+    }
+
+    .itemContainer {
+        padding-bottom: 0;
+    }
+
+    #contentContainer {
+        padding-bottom: 2%;
+        width: 80%;
+    }
+
+    #images {
+        width: 45%;
+    }
+
+    #servicesContainer {
+        padding-top: 1%;
+    }
+
+    .tabletScreenActive{
+        display: block;
+    }
+
+    .smallTabletScreenActive{
+        display: none;
+    }
+
+    .phoneScreenActive {
+        display: none;
+    }
+
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    body {background: orange;}
+    #About_Heading {
+        font-size: 28px;
+    }
+    #contentContainer {
+        width: 60%;
+    }
+
+    #servicesContainer {
+        padding-top: 0%;
+    }
+
+    .tabletScreenActive{
+        display: none;
+    }
+
+    .smallTabletScreenActive{
+        display: none;
+    }
+
+    .phoneScreenActive {
+        display: none;
+    }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    body {background: pink;}
+    #About_Heading {
+        font-size: 32px;
+    }
+    #contentContainer {
+        width: 60%;
+    }
+
+    .tabletScreenActive{
+        display: none;
+    }
+
+    .smallTabletScreenActive{
+        display: none;
+    }
+
+    .phoneScreenActive {
+        display: none;
+    }
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1497px){
+    .laptopScreenActive{
+        display: block;
+    }
+
+    .desktopScreenActive{
+        display: none;
+    }
+
+    .itemContainer {
+        padding-bottom: 0;
+    }
+
+    #contentContainer {
+        padding-bottom: 2%;
+        width: 60%;
+    }
+    #Who_Are_We{
+        font-size: 1.4em;
+    }
+
+    #images {
+        width: 20%;
+    }
+
+    #servicesContainer {
+        padding-top: 0%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .tabletScreenActive{
+        display: none;
+    }
+
+    .smallTabletScreenActive{
+        display: none;
+    }
+
+    .phoneScreenActive {
+        display: none;
+    }
+  }
+
+  @media only screen and (min-width: 1498px) {
+    .laptopScreenActive{
+        display: none;
+    }
+
+    .desktopScreenActive{
+        display: block;
+    }
+    #contentContainer {
+        width: 60%;
+        padding-bottom: 5%;
+    }
+
+    #images {
+        width: 20%;
+    }
+
+    #servicesContainer {
+        padding-top: 0%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .tabletScreenActive{
+        display: none;
+    }
+
+    .smallTabletScreenActive{
+        display: none;
+    }
+
+    .phoneScreenActive {
+        display: none;
+    }
+  }
