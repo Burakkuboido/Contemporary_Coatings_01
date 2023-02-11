@@ -403,18 +403,25 @@ ul {
 }
 
 #review {
-    width: 33%;
+    width: 25%;
     float: left;
     color: rgb(255, 255, 255);
+    padding-right: 0%;
+    padding-left: 5%;
 }
 
+#flexwrapping {
+    float: left;
+}
 
 
 #star {
     color: #ff9100;
-    width: 33%;
+    width: 25%;
     float: left;
     margin-bottom: 0%;
+    padding-right: 0%;
+    padding-left: 5%;
 }
 
 #tick {
@@ -720,6 +727,31 @@ a:hover {
     .phoneScreenActive {
         display: block;
     }
+
+    #contentContainer02 {
+        width: 100%;
+    }
+
+    #review {
+        width: 90%;
+        float: left;
+        color: rgb(255, 255, 255);
+        padding-top: 2%;
+    }
+    
+    #star {
+        padding-top: 5%;
+        border-top: 1px solid #ff9100;
+        width: 100%;
+    }
+
+    .mobileActive {
+        display: none;
+    }
+
+    .desktopActive {
+        display: block;
+    }
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -769,6 +801,18 @@ a:hover {
         display: none;
     }
 
+    #contentContainer02 {
+        width: 90%;
+    }
+
+    .mobileActive {
+        display: block;
+    }
+
+    .desktopActive {
+        display: none;
+    }
+
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
@@ -814,6 +858,18 @@ a:hover {
         display: none;
     }
 
+    #contentContainer02 {
+        width: 90%;
+    }
+
+    .mobileActive {
+        display: block;
+    }
+
+    .desktopActive {
+        display: none;
+    }
+
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
@@ -841,6 +897,18 @@ a:hover {
     .phoneScreenActive {
         display: none;
     }
+
+    #contentContainer02 {
+        width: 80%;
+    }
+
+    .mobileActive {
+        display: block;
+    }
+
+    .desktopActive {
+        display: none;
+    }
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -862,6 +930,18 @@ a:hover {
     }
 
     .phoneScreenActive {
+        display: none;
+    }
+
+    #contentContainer02 {
+        width: 60%;
+    }
+
+    .mobileActive {
+        display: block;
+    }
+
+    .desktopActive {
         display: none;
     }
   }
@@ -908,6 +988,18 @@ a:hover {
     .phoneScreenActive {
         display: none;
     }
+
+    #contentContainer02 {
+        width: 80%;
+    }
+
+    .mobileActive {
+        display: block;
+    }
+
+    .desktopActive {
+        display: none;
+    }
   }
 
   @media only screen and (min-width: 1498px) {
@@ -942,6 +1034,18 @@ a:hover {
     }
 
     .phoneScreenActive {
+        display: none;
+    }
+
+    #contentContainer02 {
+        width: 70%;
+    }
+
+    .mobileActive {
+        display: block;
+    }
+
+    .desktopActive {
         display: none;
     }
   }
