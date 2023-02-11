@@ -65,7 +65,7 @@ function initMap() {
 
 
 
-
+  let width = screen.width;
 
 // Get the Navigation Bar
 let navBar = document.getElementById("navBar");
@@ -81,6 +81,8 @@ function scrollFunction() {
     navBar.style.opacity = "1";
   }
 }
+
+
 
 // When the user moves the mouse onto the navigation bar, show the Navigation Bar
 function highOpacity(x) {
