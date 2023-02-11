@@ -217,6 +217,11 @@ p {
     display: contents;
 }
 
+#contentContainer03 {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 
 #formTextContainer {
@@ -546,7 +551,9 @@ ul {
     color: rgb(209, 209, 209)
 }
 
-
+#myBtnContainer {
+    margin-left: 2%;
+}
 
 
 
@@ -752,6 +759,17 @@ a:hover {
     .desktopActive {
         display: block;
     }
+
+    #contentContainer03 {
+        padding-bottom: 2%;
+        width: 100%;
+    }
+
+    .row, .row > .column {
+        padding-left: 1%;
+        padding-top: 12px;
+        padding-right: 1%;
+    }
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -813,6 +831,17 @@ a:hover {
         display: none;
     }
 
+    #contentContainer03 {
+        padding-bottom: 2%;
+        width: 100%;
+    }
+
+    .row, .row > .column {
+        padding-left: 1%;
+        padding-top: 12px;
+        padding-right: 1%;
+    }
+
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
@@ -870,6 +899,11 @@ a:hover {
         display: none;
     }
 
+    #contentContainer03 {
+        padding-bottom: 2%;
+        width: 75%;
+    }
+
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
@@ -909,6 +943,11 @@ a:hover {
     .desktopActive {
         display: none;
     }
+
+    #contentContainer03 {
+        padding-bottom: 2%;
+        width: 70%;
+    }
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -943,6 +982,11 @@ a:hover {
 
     .desktopActive {
         display: none;
+    }
+
+    #contentContainer03 {
+        padding-bottom: 2%;
+        width: 60%;
     }
   }
 
@@ -999,6 +1043,11 @@ a:hover {
 
     .desktopActive {
         display: none;
+    }
+
+    #contentContainer03v {
+        padding-bottom: 2%;
+        width: 60%;
     }
   }
 
