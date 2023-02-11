@@ -556,6 +556,10 @@ ul {
 }
 
 
+#contentContainerFooter > .itemContainerFooter > .itemRightFoot > p {
+    display: block;
+}
+
 
 input[type="text"],
 input[type="email"],
@@ -683,10 +687,27 @@ a:hover {
     display: none;
 }
 
+footer {
+    background: #001136;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+footer > p {
+    color: white;
+}
+
+footer > img {
+    height: 10%;
+    width: 10%;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    body {background: red;}
     .itemLeft{
         max-width: 100%;
     }
@@ -770,11 +791,24 @@ a:hover {
         padding-top: 12px;
         padding-right: 1%;
     }
+
+    footer {
+        padding-bottom: 0%;
+        padding-top: 2%;
+        padding-left: 2%;
+    }
+
+    footer > img {
+        display: none;
+    }
+
+    footer > p {
+        font-size: 14px;
+    }
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
-    body {background: green;}
     #Who_Are_We{
         font-size: 1.1em;
     }
@@ -842,11 +876,23 @@ a:hover {
         padding-right: 1%;
     }
 
+    footer {
+        padding-bottom: 0%;
+        padding-top: 2%;
+    }
+
+    footer > img {
+        display: none;
+    }
+
+    footer > p {
+        font-size: 18px;
+    }
+
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 850px) {
-    body {background: blue;}
     #About_Heading {
         font-size: 32px;
     }
@@ -908,7 +954,6 @@ a:hover {
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
-    body {background: orange;}
     #About_Heading {
         font-size: 28px;
     }
@@ -952,7 +997,6 @@ a:hover {
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
-    body {background: pink;}
     #About_Heading {
         font-size: 32px;
     }
