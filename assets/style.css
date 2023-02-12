@@ -547,7 +547,8 @@ ul {
 
 
 .itemRightInfo > p {
-    color: rgb(209, 209, 209)
+    color: rgb(209, 209, 209);
+    font-size: 16px;
 }
 
 #myBtnContainer {
@@ -591,7 +592,7 @@ input[type="tel"]
 }
 
 #formTextWhite {
-    font-size: 20px;
+    font-size: 16px;
     color: rgb(209, 209, 209);
     line-height: 1.5em;
     letter-spacing: 0.2px;
@@ -616,7 +617,7 @@ input[type="tel"]
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 22px;
     margin: 0;
 }
 
@@ -827,6 +828,23 @@ footer > img {
         opacity: 1;
     }
 
+    #mobileActive02{
+        display: none;
+    }
+
+    #contentContainerForm {
+        width: 90%;
+        padding-bottom: 5%;
+    }
+
+    .itemLeftContainer {
+        width: 80%;
+    }
+
+    .itemRightInfo {
+        float: left;
+    }
+
 
   }
   
@@ -933,6 +951,18 @@ footer > img {
         padding: 1.5em 5% 1.5em 0em;
     }
 
+    #mobileActive02{
+        display: none;
+    }
+
+    #contentContainerForm {
+        width: 70%;
+        padding-bottom: 2%;
+    }
+
+    .itemLeftContainer {
+        width: 80%;
+    }
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
@@ -1016,6 +1046,18 @@ footer > img {
         text-align: right;
     }
 
+    #mobileActive02{
+        display: none;
+    }
+
+    #contentContainerForm {
+        width: 70%;
+        padding-bottom: 2%;
+    }
+
+    .itemLeftContainer {
+        width: 80%;
+    }
 
   } 
   
@@ -1072,6 +1114,10 @@ footer > img {
     .navigation {
         margin-top: 1%;
     }
+
+    #mobileActive02{
+        display: none;
+    }
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -1110,6 +1156,10 @@ footer > img {
     #contentContainer03 {
         padding-bottom: 2%;
         width: 60%;
+    }
+
+    #mobileActive02{
+        display: block;
     }
   }
 
@@ -1172,6 +1222,19 @@ footer > img {
         padding-bottom: 2%;
         width: 60%;
     }
+
+    #contentContainerForm {
+        width: 80%;
+    }
+
+    .itemRightInfo {
+        margin-right: 0.5%;
+    }
+
+    #mobileActive02{
+        display: block;
+    }
+
   }
 
   @media only screen and (min-width: 1498px) {
@@ -1219,5 +1282,13 @@ footer > img {
 
     .desktopActive {
         display: none;
+    }
+
+    #contentContainerForm {
+        width: 60%;
+    }
+
+    .itemRightInfo {
+        margin-right: 5%;
     }
   }
