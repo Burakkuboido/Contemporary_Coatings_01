@@ -1,108 +1,179 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## Contemporary Coatings - A Decorators' Website
+[View Live Project Here](https://burakkuboido.github.io/Contemporary_Coatings_01/)
 
-Welcome Burakkuboido,
+This websites' sole purpose is for my own gain, to see what I am capable of when it comes to creating a professional standard website with minimal interactivity. By creating a decorators website, I was able to include a contact form, a google maps API to find the location of the decorators as well as an interactive gallery. I believe when creating professional websites, these sort of features are usually if not always suggested when designing the overall idea of a website. So, by working on these features, it will further increase my knowledge and skills when it comes to designing and developing websites.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![image showing the home page across 4 different screen sizes](assets/images/Responsive_Design.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## User Experience (UX)
 
-## Gitpod Reminders
+- ### User Stories
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+    - #### First Time Visiting Goals
 
-`python3 -m http.server`
+        As a first time visitor, I want to understand multiple aspects of the website. 
 
-A blue button should appear to click: _Make Public_,
+        What's the purpose.
+        How easilly can I navigate.
+        How I can contact the decorator and their services.
+        Is all the information I need on that website.
 
-Another blue button should appear to click: _Open Browser_.
+    - #### Returning Vistior Goals
+        As a returning visitor, I want to see what projects they have previously worked on and if they meet my needs.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+    - #### Frequent Visitor Goals
+        In terms of frequent visitor goals, I want to be able to keep up to date on their projects and see what their services include.
 
-A blue button should appear to click: _Make Public_,
+- ### Design
 
-Another blue button should appear to click: _Open Browser_.
+    - #### Colour Scheme
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+        When working on the design aspect of my website, I wanted to create a website that showed all the information that the user needed on one page. This would make it so that the user wouldn't have to move from page to page to find different sources of information. Keeping it as simple as possible for the user. I wanted to give the site a splash of colour to symbolise the colours of which a decorator would use in their projects. Keeping it light but also adding a few darker colours to add to the contrast. Making dark colours stand out from the light backgrounds and vice versa.
 
-To log into the Heroku toolbelt CLI:
+        I decided to keep the simple design aspect into the typography, making it use the basic typography that browsers use.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+        In terms of colours, I needed to make sure buttons and links stood out from amongst the rest of the contents, to make the user feel the need to "click me". Making these stand out was vital as I needed to make sure the user knew where they needed to go on the page to get to their desired information content.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+    - #### Typography
 
-------
+        Using the standard font that each browser used was an idea I wanted to play with, to see if each browser used different standard fonts and if they played well for my site. Through research and trial and error, I decided that keeping the site's typography simple was a good idea to stick with as not only did this mean less strain on the readers eyes, but less work needed for responsive design as some typography made it hard to read on certain aspects of the site.
 
-## Release History
+    - #### Imagery
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+        The hero image that's placed on the site was used to tell the user exactly what they wanted to hear straight from the get-go. Including where they are based, what they are, what they do, their contact information as well as an image to backup the type of projects they have previously worked on.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+        The images that I have used on my site were images of other decorators website that they in turn have used in their galleries. Though, if you were to see for yourself, my gallery does not showcase these said images. For an unknown reason as of this moment, these images do NOT show. Though, when porting my site onto the basic port oin GitHub, these images show. Though, the JavaScript works as you can click on a button and it would change what alt text would show in place of each image. So in some sense, this does still work, just not to it's ideal state. Showcasing these images were a vitgal part of the website as users would need to see what work they have previously worked on so that the user could trust the decorator's skills and experience.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+        I wanted to add a modal for each image so that when the user clicked or tapped on an image, it would make it bigger for viewing, but as time was short and I have worked on this project for multiple weeks now, it grew tiring and I know I needed to submit it as it was getting late.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+    - #### Wireframes
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+        I regret to say that I have no wireframes. I was short on time due to multiple aspects of my life getting in the way of working on my project, so I decided to skip the wireframe part and made sure my website was complete. This took a toll on the overall design of my website as it took longer to implement the features I wanted, additionally it took extra time to figure out where to place the containers on the website. It's a no-brainer to say that wireframes are vital when developing a website.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Features
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+-   Responsive on all device sizes:
+    - Mobile: [Mobile_Version](assets/images/Mobile.png)
+    - Tablet: [Tablet_Version](assets/images/Tablet.png)
+    - Desktop: [Desktop_Version](assets/images/Desktop.png)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+-   Interactive Elements:
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+    - **Nav Bar:**
+    At the top of the website, there is a navigation bar which can be seen. If the user scrolls down slightly, the navigation bar hides itself to increase viewability on the overall website. This stops the bar from getting in the way when it scrolls down as the user scrolls the page. This was to overcome the problem which was making the navigation bar sticky. When the user scrolls, the navigation bar would get in the way majority of the time, to stop this, I made the opacity of the navigation bar to 0.1 when the user scrolls. However, whenever the user hovers their cursor over the navigation bar, the navigation bar would then set it's opacity to 1.0 so the navigation bar could be seen. The point of adding these features in was so that the user could easilly click on one of the links in the navigation bar to take them to the specific element of the page so that they can easilly navigate to whichever part they desired. Couldn't have the user scroll all the way back to the top just to get to a different part of the page. It needed accessibility.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+        [The Navigation Bar](assets/images/Nav_Rec.webm)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+    - **Links To Other Sections of The Page Via Text:**
+    As you can see from the below recording, I have made it so that there are links that go to other parts of the page for the users' convenience.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+        [Links To Other Parts Via Text](assets/images/Links_Rec.webm)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+    - **Gallery:**
+    The gallery was another vital part of the website as the user would need to be able to use the decorator's projects as a reference as to what services they would like. In addition to this, it would be beneficial to the user and the decorator if they were able to see the decorator's skills and knowledge when it comes to this topic. I made it so that the user could easilly click on a button to filter the images to find what images they would like to see. This made accessability of the website a lot better and going through the extra effort of making it convenient for the user to find what they would like to discover.
+    I wanted to add a modal to this gallery so that the user could click on an image and it would enlarge it on their device but decided against it as I was running out of time.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+        [Gallery](assets/images/Gallery_Rec.webm)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+    - **Google Maps API:**
+    I wanted to add a google maps API to the website to add a little more interactivity for the user. In addition to this, the user would be able to find out where their company is located and if they deem it too far away for the decorator's to come to their location for the desired project.
 
-------
+        [Google Maps API](assets/images/API_Rec.webm)
 
-## FAQ about the uptime script
+    - **Form:**
+    The form part of my website was crucial as I needed a way for users to be able to reach out to the decorator via email. Without this, it would almost render my website futile. Luckily if the form fails, the user has the decorator's contact details to be able to reach them. It was created with the idea of the users,to be able to reach out to the decorator if they are interested in their skills and experience as a decorator.
 
-**Why have you added this script?**
+        [Form](assets/images/Form.png)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Technologies Used
 
-**How will this affect me?**
+### Languages Used
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Frameworks, Libraries and Programs Used
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+-   [Font-Awesome](https://fontawesome.com/)
+        Was used to add the down arrow into my Work page.
+-   [Git](https://git-scm.com/)
+        Was used for version control via github. To be able to tell where I have included what and when. This helps to unerstand where problems started to occur.
+-   [GitHub](https://github.com/)
+        Was used to store the projects code after being pushed to Git.
+-   [Screen Recorder](https://scre.io/)
+        Was used to record features of my website for the README file.
+-   [Google Maps API](https://developers.google.com/maps)
+        Was used to implement the Google Maps API feature onto my website.
+-   [EmailJS](https://www.emailjs.com/)
+        Was used to make the form within the website work.
 
-**So….?**
+## Testing
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+Due to timing, the W3C Markup Validator and W3C CSS Validator Services were not used to validate the website's code. Testing is a vital part of the design and development stage of web development. In the future, I plan to make more time for these.
 
-**Can I opt out?**
+### Testing User Stories from User Experience (UX) Section
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+- #### First Time Visiting Goals
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+        What's the purpose.
+        How easilly can I navigate.
+        How I can contact the decorator and their services.
+        Is all the information I need on that website.
 
-**Anything more?**
+    1. What's the purpose?
+        - "It seems that Bens' website is a decorators' website that showcases their skills and experience in decorating. it also allows for the user to submit a form to contact the decorator."
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+    2. How easilly can I navigate?
+        - "All the links work to my knowledge, I was using a phone and it worked, I then moved onto the PC and it worked. Though, on mobile it seems taht the links at the top of the page are a bit over the place."
 
----
+    3. How I can contact the developer of the website?
+        - "There is a form in which I can use, it sent me an email on submission, so it seems to work great for the time being. There is also contact information across different parts of the website."
 
-Happy coding!
+    4. Is all the information I need on that website?
+        - "Contact information, what their services are and what they do seem to be easily found on the website."
+
+- #### Returning Vistior Goals
+
+    1. As a returning visitor, I want to see what projects they have previously worked on and if they meet my needs?
+        - "If I was looking for a decorator, I wouldnt be returning as usually I would want one job done and that is all. Though, I can see what projects they have previously worked on and based of my hypothetical needs, they meet it."
+
+- #### Frequent Visitor Goals
+
+    1. In terms of frequent visitor goals, I want to be able to keep up to date on their projects and see what their services include?
+        - "I can't exactly tell what is up to date and what isn't. Though, Services can be easilly found across the website."
+
+### Further Testing
+- The website was manually tested on a Samsung S8+, Iphone 5/SE, Ipad Air, PC and some random device dimensions.
+- The website was manually tested on Google Chrome and FireFox.
+- The website was viewed in Developer tools at all settings of responsiveness. 
+- All links clicked and checked.
+- Sent the website to a friend to check to see if everything works well on his end.
+
+### Known Bugs (Resolved)
+    1. Gallery margin on the left was twice the size of the right when clicking on the buttons.
+    2. Form would not work when submitting. Once it did work, it wasnt sending the right information over.
+    3. Hero image would be stretched or not fitting 100% of the screen width.
+    4. Navigation bar wouldnt stick.
+    5. Navigation bar wouldn't be visible when scrolling back to the top.
+    6. Google Maps API would be all over the place or dissapear entirely at certain screen widths.
+
+
+### Known Bugs (Not Resolved)
+    1. Nav Bar sometimes doesnt turn visible when the requirements are met.
+    2. Website does NOT work on samsung fold phones due to their phones' width being incredibly small.
+    3. it seems on the hosted platform, the gallery images do NOT show.
+
+## Credits
+
+### Code
+- [Stackoverflow](https://stackoverflow.com/) To remind me what I might be missing in my code for it to not work properly.
+- [EmailJS](https://www.emailjs.com/) To help me understand how the peice of software works.
+- [Google Maps API](https://developers.google.com/maps) To help me figure out what it is I need to implement in my own code for it to work.
+
+### Content
+- [Code Institute Sample Readme](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CSSE_PAGPPF+2021_Q2/courseware/66cf361c769a41d496f5001fae6f9be7/3b5cd5dc8313462aa5975a3c9b9a1a3c/) for Readme layout.
+
+### Media
+- Images from the Gallery can be found [here](https://www.kent-decorators.co.uk/)
+- Image for Banner/Hero Image cannot be found. It was created using a peice of online software. Gives an example in PSD form and you can edit it to your liking.
