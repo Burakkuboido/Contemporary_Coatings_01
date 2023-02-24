@@ -157,12 +157,12 @@ Due to timing, the W3C Markup Validator and W3C CSS Validator Services were not 
     4. Navigation bar wouldnt stick.
     5. Navigation bar wouldn't be visible when scrolling back to the top.
     6. Google Maps API would be all over the place or dissapear entirely at certain screen widths.
+    7. All images on the page would not show on the hosted platform. It has now been fixed through talking with tutor support on Code Institute. The reason it wasn't working was due to the file locations starting with "/" for example, "/assets/images...". Remove the / and it worked.
 
 
 ### Known Bugs (Not Resolved)
     1. Nav Bar sometimes doesnt turn visible when the requirements are met.
     2. Website does NOT work on samsung fold phones due to their phones' width being incredibly small.
-    3. it seems on the hosted platform, the gallery images do NOT show.
 
 ## Credits
 
