@@ -170,6 +170,7 @@ Due to timing, the W3C Markup Validator and W3C CSS Validator Services were not 
 - [Stackoverflow](https://stackoverflow.com/) To remind me what I might be missing in my code for it to not work properly.
 - [EmailJS](https://www.emailjs.com/) To help me understand how the peice of software works.
 - [Google Maps API](https://developers.google.com/maps) To help me figure out what it is I need to implement in my own code for it to work.
+- [MODAL](https://www.w3schools.com/howto/howto_js_lightbox.asp) To help me figure out how to create the MODAL for my gallery to add interactivity.
 
 ### Content
 - [Code Institute Sample Readme](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CSSE_PAGPPF+2021_Q2/courseware/66cf361c769a41d496f5001fae6f9be7/3b5cd5dc8313462aa5975a3c9b9a1a3c/) for Readme layout.

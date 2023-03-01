@@ -158,53 +158,119 @@
   <div class="row">
     <div class="column ExteriorPainting">
       <div class="content">
-        <img src="assets/images/ExteriorPainting_01.jpg" alt="ExteriorPainting" style="width:100%">
+        <img src="assets/images/ExteriorPainting_01.jpg" onclick="openModal();currentSlide(1)" alt="ExteriorPainting" style="width:100%" class="hover-shadow">
       </div>
     </div>
     <div class="column ExteriorPainting">
       <div class="content">
-      <img src="assets/images/ExteriorPainting_02.jpg" alt="ExteriorPainting" style="width:100%">
+      <img src="assets/images/ExteriorPainting_02.jpg" onclick="openModal();currentSlide(2)" alt="ExteriorPainting" style="width:100%" class="hover-shadow">
       </div>
     </div>
     <div class="column ExteriorPainting">
       <div class="content">
-      <img src="assets/images/ExteriorPainting_03.jpg" alt="ExteriorPainting" style="width:100%">
+      <img src="assets/images/ExteriorPainting_03.jpg" onclick="openModal();currentSlide(3)" alt="ExteriorPainting" style="width:100%" class="hover-shadow">
       </div>
     </div>
     
     <div class="column Interior">
       <div class="content">
-        <img src="assets/images/Interior_01.jpg" alt="Interior" style="width:100%">
+        <img src="assets/images/Interior_01.jpg" onclick="openModal();currentSlide(4)" alt="Interior" style="width:100%">
       </div>
     </div>
     <div class="column Interior">
       <div class="content">
-      <img src="assets/images/Interior_02.jpg" alt="Interior" style="width:100%">
+      <img src="assets/images/Interior_02.jpg" onclick="openModal();currentSlide(5)" alt="Interior" style="width:100%">
       </div>
     </div>
     <div class="column Interior">
       <div class="content">
-      <img src="assets/images/Interior_03.jpg" alt="Interior" style="width:100%">
+      <img src="assets/images/Interior_03.jpg" onclick="openModal();currentSlide(6)" alt="Interior" style="width:100%">
       </div>
     </div>
 
       <div class="column Spraying">
         <div class="content">
-        <img src="assets/images/Spraying_02.jpg" alt="Spraying" style="width:100%">
+        <img src="assets/images/Spraying_02.jpg" onclick="openModal();currentSlide(7)" alt="Spraying" style="width:100%">
         </div>
       </div>
 
       <div class="column Wallpapering">
         <div class="content">
-          <img src="assets/images/Wallpapering_01.jpg" alt="Wallpapering" style="width:100%">
+          <img src="assets/images/Wallpapering_01.jpg" onclick="openModal();currentSlide(8)" alt="Wallpapering" style="width:100%">
         </div>
       </div>
       <div class="column Wallpapering">
         <div class="content">
-        <img src="assets/images/Wallpapering_03.jpg" alt="Wallpapering" style="width:100%">
+        <img src="assets/images/Wallpapering_03.jpg" onclick="openModal();currentSlide(9)" alt="Wallpapering" style="width:100%">
         </div>
       </div>
 </div>
+
+<!-- START OF MODAL SECTION -->
+<!-- The modal section was taken from https://www.w3schools.com/howto/howto_js_lightbox.asp-->
+
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 9</div>
+        <img src="assets/images/ExteriorPainting_01.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 9</div>
+        <img src="assets/images/ExteriorPainting_02.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 9</div>
+        <img src="assets/images/ExteriorPainting_03.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 9</div>
+        <img src="assets/images/Interior_01.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 9</div>
+        <img src="assets/images/Interior_02.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 9</div>
+        <img src="assets/images/Interior_03.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">7 / 9</div>
+        <img src="assets/images/Spraying_02.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">8 / 9</div>
+        <img src="assets/images/Wallpapering_01.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">9 / 9</div>
+        <img src="assets/images/Wallpapering_03.jpg" style="width:100%">
+      </div>
+
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- END OF MODAL SECTION -->
+
 </div>
 </section>
 
