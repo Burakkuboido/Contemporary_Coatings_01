@@ -815,10 +815,17 @@ footer > img {
     width: 10%;
 }
 
+#contentContainer01 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+    background: #001136;
+}
+
 #wrapper {
-  width: 600px;
+width: 30%;
   margin: 0 auto;
-  background: white;
+  background: #d17600;
   padding: 10px 15px;
   border-radius: 10px;
 }
@@ -852,6 +859,12 @@ button {
     background-color: #00184df2;
 }
 
+#wrapper > h1,
+#quiz > h2 {
+    color: #00184c;
+    font-weight: bold;
+}
+
 
 input[type="radio"],
 #firstAnswer,
@@ -867,6 +880,7 @@ input[type="radio"],
 #q3ThirdAnswer,
 #q3FourthAnswer {
     cursor: pointer;
+    color: #00184c;
 }
 
 #answer {
@@ -1015,6 +1029,16 @@ input[type="radio"],
         float: left;
     }
 
+    #wrapper {
+        width: 80%;
+    }
+
+    
+    #contentContainer01{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
 
   }
   
@@ -1133,6 +1157,10 @@ input[type="radio"],
     .itemLeftContainer {
         width: 80%;
     }
+
+    #wrapper {
+        width: 80%;
+    }
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
@@ -1229,6 +1257,10 @@ input[type="radio"],
         width: 80%;
     }
 
+    #wrapper {
+        width: 60%;
+    }
+
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
@@ -1288,6 +1320,10 @@ input[type="radio"],
     #mobileActive02{
         display: none;
     }
+
+    #wrapper {
+        width: 80%;
+    }
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -1330,6 +1366,10 @@ input[type="radio"],
 
     #mobileActive02{
         display: block;
+    }
+
+    #wrapper {
+        width: 30%;
     }
   }
 
@@ -1405,6 +1445,10 @@ input[type="radio"],
         display: block;
     }
 
+    #wrapper {
+        width: 50%;
+    }
+
   }
 
   @media only screen and (min-width: 1498px) {
@@ -1460,5 +1504,9 @@ input[type="radio"],
 
     .itemRightInfo {
         margin-right: 5%;
+    }
+
+    #wrapper {
+        width: 30%;
     }
   }
