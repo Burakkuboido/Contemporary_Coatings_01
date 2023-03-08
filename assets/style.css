@@ -815,6 +815,66 @@ footer > img {
     width: 10%;
 }
 
+#wrapper {
+  width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+input {
+  margin: 5px 10px;
+}
+button {
+  font-size: 18px;
+  padding: 10px;
+  margin: 20px 0;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  border-bottom: 3px solid #333;
+}
+#submit {
+  background: #f0860c;
+}
+
+#reset {
+  background: #00184c;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: #ff8f0e;
+}
+
+#reset:hover {
+    cursor: pointer;
+    background-color: #00184df2;
+}
+
+
+input[type="radio"],
+#firstAnswer,
+#secondAnswer,
+#thirdAnswer,
+#fourthAnswer,
+#q2FirstAnswer,
+#q2SecondAnswer,
+#q2ThirdAnswer,
+#q2FourthAnswer,
+#q3FirstAnswer,
+#q3SecondAnswer,
+#q3ThirdAnswer,
+#q3FourthAnswer {
+    cursor: pointer;
+}
+
+#answer {
+  border: 1px dashed #ccc;
+  background: #eee;
+  padding: 10px;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

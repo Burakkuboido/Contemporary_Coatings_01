@@ -139,3 +139,155 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+// function to calculate the result of the survey
+function tabulateAnswers() {
+  // initialize variables for each choice's score
+  var a1score = 0;
+  var a2score = 0;
+  var a3score = 0;
+  var a4score = 0;
+
+  var b1score = 0;
+  var b2score = 0;
+  var b3score = 0;
+  var b4score = 0;
+
+  var c1score = 0;
+  var c2score = 0;
+  var c3score = 0;
+  var c4score = 0;
+
+  
+  // get a list of the radio inputs on the page
+  var choices = document.getElementsByTagName('input');
+  // loop through all the radio inputs
+  for (i=0; i<=3; i++) {
+    // if the radio is checked..
+    if (choices[i].checked) {
+      // add 1 to that choice's score
+      if (choices[i].value == 'a1') {
+        a1score = a1score + 1;
+      }
+      if (choices[i].value == 'a2') {
+        a2score = a2score + 1;
+      }
+      if (choices[i].value == 'a3') {
+        a3score = a3score + 1;
+      }
+      if (choices[i].value == 'a4') {
+        a4score = a4score + 1;
+      }
+    }
+  }
+
+  for (i=4; i<=7; i++) {
+    // if the radio is checked..
+    if (choices[i].checked) {
+      // add 1 to that choice's score
+      if (choices[i].value == 'b1') {
+        b1score = b1score + 1;
+      }
+      if (choices[i].value == 'b2') {
+        b2score = b2score + 1;
+      }
+      if (choices[i].value == 'b3') {
+        b3score = b3score + 1;
+      }
+      if (choices[i].value == 'b4') {
+        b4score = b4score + 1;
+      }
+    }
+  }
+
+  for (i=7; i<=10; i++) {
+    // if the radio is checked..
+    if (choices[i].checked) {
+      // add 1 to that choice's score
+      if (choices[i].value == 'c1') {
+        c1score = c1score + 1;
+      }
+      if (choices[i].value == 'c2') {
+        c2score = c2score + 1;
+      }
+      if (choices[i].value == 'c3') {
+        c3score = c3score + 1;
+      }
+      if (choices[i].value == 'c4') {
+        c4score = c4score + 1;
+      }
+    }
+  }
+  
+  // Find out which choice got the highest score.
+  var maxscore = Math.max(a1score,a2score,a3score,a4score);
+  var q1a1 = document.getElementById("firstAnswer").innerHTML;
+  var q1a2 = document.getElementById("secondAnswer").innerHTML;
+  var q1a3 = document.getElementById("thirdAnswer").innerHTML;
+  var q1a4 = document.getElementById("fourthAnswer").innerHTML;
+
+  var maxscore1 = Math.max(b1score,b2score,b3score,b4score);
+  var q2a1 = document.getElementById("q2FirstAnswer").innerHTML;
+  var q2a2 = document.getElementById("q2SecondAnswer").innerHTML;
+  var q2a3 = document.getElementById("q2ThirdAnswer").innerHTML;
+  var q2a4 = document.getElementById("q2FourthAnswer").innerHTML;
+
+  var maxscore2 = Math.max(c1score,c2score,c3score,c4score);
+  var q3a1 = document.getElementById("q3FirstAnswer").innerHTML;
+  var q3a2 = document.getElementById("q3SecondAnswer").innerHTML;
+  var q3a3 = document.getElementById("q3ThirdAnswer").innerHTML;
+  var q3a4 = document.getElementById("q3FourthAnswer").innerHTML;
+  
+  // Display answer corresponding to that choice
+  var answerbox = document.getElementById('answer');
+  if (a1score == maxscore) { // If user chooses the first choice, this outcome will be displayed.
+    var q1answer = q1a1;
+  }
+  if (a2score == maxscore) { // If user chooses the second choice, this outcome will be displayed.
+    var q1answer = q1a2;
+  }
+  if (a3score == maxscore) { // If user chooses the third choice, this outcome will be displayed.
+    var q1answer = q1a3;
+  }
+  if (a4score == maxscore) { // If user chooses the fourth choice, this outcome will be displayed.
+    var q1answer = q1a4;
+  }
+
+  if (b1score == maxscore1) { // If user chooses the first choice, this outcome will be displayed.
+    var q2answer = q2a1;
+  }
+  if (b2score == maxscore1) { // If user chooses the second choice, this outcome will be displayed.
+    var q2answer = q2a2;
+  }
+  if (b3score == maxscore1) { // If user chooses the third choice, this outcome will be displayed.
+    var q2answer = q2a3;
+  }
+  if (b4score == maxscore1) { // If user chooses the fourth choice, this outcome will be displayed.
+    var q2answer = q2a4;
+  }
+
+  if (c1score == maxscore2) { // If user chooses the first choice, this outcome will be displayed.
+    var q3answer = q3a1;
+  }
+  if (c2score == maxscore2) { // If user chooses the second choice, this outcome will be displayed.
+    var q3answer = q3a2;
+  }
+  if (c3score == maxscore2) { // If user chooses the third choice, this outcome will be displayed.
+    var q3answer = q3a3;
+  }
+  if (c4score == maxscore2) { // If user chooses the fourth choice, this outcome will be displayed.
+    var q3answer = q3a4;
+  }
+
+  answerbox.innerHTML = "<b>You have chosen the following:<br></b>" + q1answer + "<br>" + q2answer + "<br>" + q3answer;
+
+  event.preventDefault();
+  event.stopPropagation();
+}
+
+
+// program the reset button
+function resetAnswer() {
+  var answerbox = document.getElementById('answer');
+  answerbox.innerHTML = "Your result will show up here!";
+}
