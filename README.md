@@ -85,6 +85,11 @@ This websites' sole purpose is for my own gain, to see what I am capable of when
 
         [Form](assets/images/Form.png)
 
+    - **Questionnaire:**
+    i wanted to implement a questionnaire for my website so that it uses more forms of interactivity for the user. The questionnaire comes in handy for the user as they can state what their budget is, what their timeframe is and what needs to be done. These are the three vital questions that decorators need to have answered by their customers so they know what needs to be done and how to do it the right way for the customer. The downside of the questionnaire is that it returns the answers that the user has input into the form but it does not save the answers. I hope to learn how in the near future.
+
+        [Form](assets/images/questionnaire.png)
+
 ## Technologies Used
 
 ### Languages Used
@@ -110,16 +115,29 @@ This websites' sole purpose is for my own gain, to see what I am capable of when
 
 ## Testing
 
-Due to timing, the W3C Markup Validator and W3C CSS Validator Services were not used to validate the website's code. Testing is a vital part of the design and development stage of web development. In the future, I plan to make more time for these.
+The W3C Markup Validator, W3C CSS Validator and the JavaScript validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+- [W3C Markup Validator](https://validator.w3.org/#validate_by_input) - Results: [HTML](assets/images/W3C_Markup_Validator.png)
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - Results: [CSS](assets/images/W3S_CSS_Validator.png)
+- [JavaScript Validator](https://codebeautify.org/jsvalidate) - Results: [JavaScript Page One](assets/images/JS_Validator_01.png)[JavaScript Page Two](assets/images/JS_Validator_02.png)
+
+### HTML Validator
+The HTML validator gives off a lot of errors, this is mostly due to the fact that I have duplicate ID's and since ID's are meant to be used on a specific element, it gives these errors as I have many duplicates. Instead, I should have used classes as they are used for a collective of elements. In addition to this, the use of some of my "br" elements are giving off errors as you don't need a trail slash, though when I remove them, it destroys my code. So that was left in. Lastly, the "p" element is not allowed as a child element of "label". I tried changing this but as soon as I changed it, it once again destroyed my code. So I decided to leave it unchanged.
+
+### CSS Validator
+The CSS validator was a complete success. There were no errors.
+
+### JavaScript Validator
+The JavaScript Validator gave me errors for a code that was taken from online resources. My own code does not give me any errors. I tried changing it but it destorys my gallery so I thought I'd leave it in.
 
 ### Testing User Stories from User Experience (UX) Section
 
 - #### First Time Visiting Goals
 
-        What's the purpose.
-        How easilly can I navigate.
-        How I can contact the decorator and their services.
-        Is all the information I need on that website.
+   - #### What's the purpose.
+    - #### How easilly can I navigate.
+    - #### How I can contact the decorator and their services.
+    - #### Is all the information I need on that website.
 
     1. What's the purpose?
         - "It seems that Bens' website is a decorators' website that showcases their skills and experience in decorating. it also allows for the user to submit a form to contact the decorator."

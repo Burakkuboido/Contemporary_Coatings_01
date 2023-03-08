@@ -240,9 +240,9 @@ nav > ul > li > a {
   z-index: -1;
 }
 
-#quote:main,
+#quote,
 #quote:focus,
-#OurWorkBtn:main,
+#OurWorkBtn,
 #OurWorkBtn:focus {
   user-select: auto;
 }
@@ -254,7 +254,7 @@ nav > ul > li > a {
 }
 
 #quote:disabled,
-#OurWorkBtn:disabl {
+#OurWorkBtn:disabled {
   cursor: auto;
 }
 
@@ -568,7 +568,7 @@ ul {
     border: none;
     outline: none;
     padding: 12px 16px;
-    background-color: white;
+    background-color: #001136;
     cursor: pointer;
     border-radius: 6px;
   }
@@ -1032,7 +1032,6 @@ input[type="radio"],
     #wrapper {
         width: 80%;
     }
-
     
     #contentContainer01{
         padding-top: 5%;
